@@ -1,5 +1,5 @@
 #title{
-    font-weight: 200;
+    font-weight: 300;
     font-size: 24px;
 }
 
@@ -17,14 +17,13 @@
   align-content: center;
 }
 
-.icon{
-    margin-right: 20px;
+.icon {
+   font-size: 20px;
 }
-
 .product-logo{
     padding:20px;
 }
 
-.animated.fadeInUp{
-    animation-duration: 1s;
+p {
+    margin-bottom: 20px !important;
 }
