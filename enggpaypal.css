@@ -1,0 +1,30 @@
+#title{
+    font-weight: 200;
+    font-size: 24px;
+}
+
+#search{
+    text-align: center;
+    
+}
+
+#filter {
+    text-align: center;
+}
+
+.card-content{
+  text-align: center;
+  align-content: center;
+}
+
+.icon{
+    margin-right: 20px;
+}
+
+.product-logo{
+    padding:20px;
+}
+
+.animated.fadeInUp{
+    animation-duration: 1s;
+}
