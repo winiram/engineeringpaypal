@@ -1,26 +1,29 @@
 <html>
 
 <head>
-    <title>Legit!</title>
+    <title>PayPal Engineering</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="materialize/css/materialize.min.css" type="text/css" media="screen, projection">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,700,500' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" href="enggpaypal.css" rel="stylesheet">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
+    <link rel="stylesheet" href="font-awesome-animation.min.css">
 
     <link rel="stylesheet" href="animate.css" type="text/css">
-</head>
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    
+    </head>
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.js"></script>
+  
+    <script>
+    $(document).ready(function() {
+        $("i").click(function() {
+            $(this).toggleClass("fa-heart-o grey-text fa-heart red-text text-lighten-2 animated bounceIn");
+        });
+    });
+</script>
     <!--begin navigation-->
 
     <nav class="grey lighten-4">
@@ -52,7 +55,7 @@
                     </div>
                     <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
                     <div class="icon row">
-                        <div class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
+                        <div id="heart" class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
                     </div>
                 </div>
             </div>

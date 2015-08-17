@@ -18,12 +18,14 @@
 }
 
 .icon {
-   font-size: 20px;
+   font-size: 2rem;
+   padding: inherit;
 }
 .product-logo{
-    padding:20px;
+    padding:10%;
 }
 
 p {
     margin-bottom: 20px !important;
 }
+
