@@ -3,45 +3,51 @@
 <head>
     <title>PayPal Engineering</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="materialize/css/materialize.min.css" type="text/css" media="screen, projection">
+   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,700,500' rel='stylesheet' type='text/css'>
     <link type="text/css" href="enggpaypal.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
     <link rel="stylesheet" href="font-awesome-animation.min.css">
-
     <link rel="stylesheet" href="animate.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    
-    </head>
-<body>
-  
-    <script>
-    $(document).ready(function() {
-        $("i").click(function() {
-            $(this).toggleClass("fa-heart-o grey-text fa-heart red-text text-lighten-2 animated bounceIn");
-        });
-    });
-</script>
-    <!--begin navigation-->
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+     <link rel="stylesheet" href="materialize/css/materialize.min.css" type="text/css" media="all">
 
-    <nav class="grey lighten-4">
-        <div class="nav-wrapper">
-            <div class="row">
-                <div class="col s4 grey-text text-darken-3" id="title">
-                    Engineering Home
-                </div>
-                <div class="col s4 grey-text text-darken-3" id="search">
-                    Search
-                </div>
-                <div class="col s4 grey-text text-darken-3" id="filter">
-                    Filter
+</head>
+
+<body>
+
+    <script>
+        $(document).ready(function() {
+            $(".heart").click(function() {
+                $(this).toggleClass("fa-star-o grey-text fa-star yellow-text text-darken-2 animated bounceIn");
+            });
+        });
+
+    </script>
+    <!--begin navigation-->
+    <div class="navbar-fixed">
+        <nav class="grey lighten-4">
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col s4 grey-text text-darken-1" id="title">
+                        Engineering Home
+                    </div>
+                    <div class="input-field col s6">
+                       <i id="searchincon" class="material-icons prefix grey-text">search</i>
+                         <input id="icon_prefix" type="text" class="validate grey-text"> 
+                        <label for="icon_prefix grey-text">Search:</label>
+                    </div>
+                    <div class="grey-text text-darken-1" id="filter">
+                        Filter
+                    </div>
                 </div>
             </div>
-
-        </div>
-    </nav>
+        </nav>
+    </div>
     <br>
     <br>
     <!--end navigation-->
@@ -55,57 +61,57 @@
                     </div>
                     <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
                     <div class="icon row">
-                        <div id="heart" class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col s3">
-            <div class="card white animated fadeIn hoverable">
-                <div class="card-content white-text">
-                    <span class="card-title grey-text text-darken-2">Altus</span>
-                    <div class="product-logo">
-                        <img src="img/placeimg_120_120_grayscale_tech.jpg">
-                    </div>
-                    <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
-                    <div class="icon row">
-                        <div class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col s3">
-            <div class="card white animated fadeIn hoverable">
-                <div class="card-content white-text">
-                    <span class="card-title grey-text text-darken-2">Altus</span>
-                    <div class="product-logo">
-                        <img src="img/placeimg_120_120_grayscale_tech.jpg">
-                    </div>
-                    <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
-                    <div class="icon row">
-                        <div class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col s3">
-            <div class="card white animated fadeIn hoverable">
-                <div class="card-content white-text">
-                    <span class="card-title grey-text text-darken-2">Altus</span>
-                    <div class="product-logo">
-                        <img src="img/placeimg_120_120_grayscale_tech.jpg">
-                    </div>
-                    <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
-                    <div class="icon row">
-                        <div class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
+                        <div class="col s3 offset-s10"><i class="heart fa fa-star-o grey-text"></i></div>
                     </div>
                 </div>
             </div>
         </div>
 
+         <div class="col s3">
+            <div class="card white animated fadeIn hoverable">
+                <div class="card-content white-text">
+                    <span class="card-title grey-text text-darken-2">Altus</span>
+                    <div class="product-logo">
+                        <img src="img/placeimg_120_120_grayscale_tech.jpg">
+                    </div>
+                    <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
+                    <div class="icon row">
+                        <div class="col s3 offset-s10"><i class="heart fa fa-star-o grey-text"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="col s3">
+            <div class="card white animated fadeIn hoverable">
+                <div class="card-content white-text">
+                    <span class="card-title grey-text text-darken-2">Altus</span>
+                    <div class="product-logo">
+                        <img src="img/placeimg_120_120_grayscale_tech.jpg">
+                    </div>
+                    <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
+                    <div class="icon row">
+                        <div class="col s3 offset-s10"><i class="heart fa fa-star-o grey-text"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="col s3">
+            <div class="card white animated fadeIn hoverable">
+                <div class="card-content white-text">
+                    <span class="card-title grey-text text-darken-2">Altus</span>
+                    <div class="product-logo">
+                        <img src="img/placeimg_120_120_grayscale_tech.jpg">
+                    </div>
+                    <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
+                    <div class="icon row">
+                        <div class="col s3 offset-s10"><i class="heart fa fa-star-o grey-text"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-       <div class="row">
-        <div class="col s3">
+    <div class="row">
+         <div class="col s3">
             <div class="card white animated fadeIn hoverable">
                 <div class="card-content white-text">
                     <span class="card-title grey-text text-darken-2">Altus</span>
@@ -114,12 +120,12 @@
                     </div>
                     <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
                     <div class="icon row">
-                        <div class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
+                        <div class="col s3 offset-s10"><i class="heart fa fa-star-o grey-text"></i></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col s3">
+         <div class="col s3">
             <div class="card white animated fadeIn hoverable">
                 <div class="card-content white-text">
                     <span class="card-title grey-text text-darken-2">Altus</span>
@@ -128,12 +134,12 @@
                     </div>
                     <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
                     <div class="icon row">
-                        <div class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
+                        <div class="col s3 offset-s10"><i class="heart fa fa-star-o grey-text"></i></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col s3">
+         <div class="col s3">
             <div class="card white animated fadeIn hoverable">
                 <div class="card-content white-text">
                     <span class="card-title grey-text text-darken-2">Altus</span>
@@ -142,12 +148,12 @@
                     </div>
                     <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
                     <div class="icon row">
-                        <div class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
+                        <div class="col s3 offset-s10"><i class="heart fa fa-star-o grey-text"></i></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col s3">
+         <div class="col s3">
             <div class="card white animated fadeIn hoverable">
                 <div class="card-content white-text">
                     <span class="card-title grey-text text-darken-2">Altus</span>
@@ -156,15 +162,14 @@
                     </div>
                     <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
                     <div class="icon row">
-                        <div class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
+                        <div class="col s3 offset-s10"><i class="heart fa fa-star-o grey-text"></i></div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
-       <div class="row">
-        <div class="col s3">
+    <div class="row">
+         <div class="col s3">
             <div class="card white animated fadeIn hoverable">
                 <div class="card-content white-text">
                     <span class="card-title grey-text text-darken-2">Altus</span>
@@ -173,7 +178,35 @@
                     </div>
                     <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
                     <div class="icon row">
-                        <div class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
+                        <div class="col s3 offset-s10"><i class="heart fa fa-star-o grey-text"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="col s3">
+            <div class="card white animated fadeIn hoverable">
+                <div class="card-content white-text">
+                    <span class="card-title grey-text text-darken-2">Altus</span>
+                    <div class="product-logo">
+                        <img src="img/placeimg_120_120_grayscale_tech.jpg">
+                    </div>
+                    <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
+                    <div class="icon row">
+                        <div class="col s3 offset-s10"><i class="heart fa fa-star-o grey-text"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="col s3">
+            <div class="card white animated fadeIn hoverable">
+                <div class="card-content white-text">
+                    <span class="card-title grey-text text-darken-2">Altus</span>
+                    <div class="product-logo">
+                        <img src="img/placeimg_120_120_grayscale_tech.jpg">
+                    </div>
+                    <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
+                    <div class="icon row">
+                        <div class="col s3 offset-s10"><i class="heart fa fa-star-o grey-text"></i></div>
                     </div>
                 </div>
             </div>
@@ -187,43 +220,14 @@
                     </div>
                     <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
                     <div class="icon row">
-                        <div class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
+                        <div class="col s3 offset-s10"><i class="heart fa fa-star-o grey-text"></i></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col s3">
-            <div class="card white animated fadeIn hoverable">
-                <div class="card-content white-text">
-                    <span class="card-title grey-text text-darken-2">Altus</span>
-                    <div class="product-logo">
-                        <img src="img/placeimg_120_120_grayscale_tech.jpg">
-                    </div>
-                    <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
-                    <div class="icon row">
-                        <div class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col s3">
-            <div class="card white animated fadeIn hoverable">
-                <div class="card-content white-text">
-                    <span class="card-title grey-text text-darken-2">Altus</span>
-                    <div class="product-logo">
-                        <img src="img/placeimg_120_120_grayscale_tech.jpg">
-                    </div>
-                    <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
-                    <div class="icon row">
-                        <div class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
-       <div class="row">
-        <div class="col s3">
+    <div class="row">
+         <div class="col s3">
             <div class="card white animated fadeIn hoverable">
                 <div class="card-content white-text">
                     <span class="card-title grey-text text-darken-2">Altus</span>
@@ -232,7 +236,35 @@
                     </div>
                     <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
                     <div class="icon row">
-                        <div class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
+                        <div class="col s3 offset-s10"><i class="heart fa fa-star-o grey-text"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="col s3">
+            <div class="card white animated fadeIn hoverable">
+                <div class="card-content white-text">
+                    <span class="card-title grey-text text-darken-2">Altus</span>
+                    <div class="product-logo">
+                        <img src="img/placeimg_120_120_grayscale_tech.jpg">
+                    </div>
+                    <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
+                    <div class="icon row">
+                        <div class="col s3 offset-s10"><i class="heart fa fa-star-o grey-text"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="col s3">
+            <div class="card white animated fadeIn hoverable">
+                <div class="card-content white-text">
+                    <span class="card-title grey-text text-darken-2">Altus</span>
+                    <div class="product-logo">
+                        <img src="img/placeimg_120_120_grayscale_tech.jpg">
+                    </div>
+                    <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
+                    <div class="icon row">
+                        <div class="col s3 offset-s10"><i class="heart fa fa-star-o grey-text"></i></div>
                     </div>
                 </div>
             </div>
@@ -246,41 +278,13 @@
                     </div>
                     <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
                     <div class="icon row">
-                        <div class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
+                        <div class="col s3 offset-s10"><i class="heart fa fa-star-o grey-text"></i></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col s3">
-            <div class="card white animated fadeIn hoverable">
-                <div class="card-content white-text">
-                    <span class="card-title grey-text text-darken-2">Altus</span>
-                    <div class="product-logo">
-                        <img src="img/placeimg_120_120_grayscale_tech.jpg">
-                    </div>
-                    <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
-                    <div class="icon row">
-                        <div class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col s3">
-            <div class="card white animated fadeIn hoverable">
-                <div class="card-content white-text">
-                    <span class="card-title grey-text text-darken-2">Altus</span>
-                    <div class="product-logo">
-                        <img src="img/placeimg_120_120_grayscale_tech.jpg">
-                    </div>
-                    <p class="grey-text">I am a very simple card. I am good at containing small bits of information. </p>
-                    <div class="icon row">
-                        <div class="col s3 offset-s10"><i class="fa fa-heart-o grey-text"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 
 </body>
+
 </html>
