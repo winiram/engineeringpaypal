@@ -20,6 +20,7 @@
 .icon {
    font-size: 2rem;
    padding: inherit;
+    margin-right: 0;
 }
 .product-logo{
     padding:10%;
